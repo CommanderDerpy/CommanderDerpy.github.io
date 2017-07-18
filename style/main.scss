@@ -1,0 +1,30 @@
+---
+
+---
+
+body > nav {
+	margin-bottom: 0 !important;
+}
+
+header {
+	text-align: center;
+	background-image: url('{{ site.url }}/images/BlackDesertOnline-lg.jpg');
+}
+
+body {
+	background-color: #696969;
+}
+
+body > main > div {
+	max-width: 85%;
+	background-color: white;
+}
+
+body > main > div 
+{
+	padding: 25px;
+}
+
+footer {
+	background-color: #101010;
+}

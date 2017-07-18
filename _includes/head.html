@@ -1,0 +1,51 @@
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+<!-- Boostrap css -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">-->
+
+    <!-- For best performance load scripts at the end of the file
+         BUT we need jquery to provide a fail over for bootstrap - so we trade off performance for stability -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        // JQuery fail over script
+        window.jQuery || document.write('<script src="../Scripts/jquery-3.1.1.min.js"><\/script>');
+    </script>
+
+    <!-- Jquery UI -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript">
+        // JQuery fail over script
+        window.jQuery || document.write('<script src="Scripts/jquery-ui-1.12.1.min.js"><\/script>');
+    </script>
+
+
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Modenizer -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            //load bootstrap locally
+            if (typeof($.fn.modal) === 'undefined') {
+                $('head').append('<script src="../Scripts/bootstrap.js"><\/script>');
+            }
+            //check if bootstrap loaded,  if not add fail over links to the local bootrap files
+            $('body').css('color') == 'rgb(51, 51, 51)' ||
+                $('head').prepend('<link href="/Content/bootstrap.min.css" rel="stylesheet" /><link href="/Content/bootstrap-theme.min.css" rel="stylesheet" />');
+            // Modernizer fall back script
+            if (!Modernizr.canvas) {
+                $('head').append('<script src="../Scripts/modernizr-2.8.3.js"><\/script>');
+            }
+        });
+    </script>
+
+	<link rel="stylesheet" href="{{ "/style/main.css" | prepend: site.baseurl }}">
+
+</head> 
