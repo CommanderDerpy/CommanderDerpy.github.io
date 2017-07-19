@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Very First chage log"
+date:   2017-07-18 00:00:00 -0600
+categories: changes
+---
+
+- Small bug fixes
+- Changed the landing page
+- Added "Join us" page
+- Added "Change log" page
+- Added some menu options
+- Some things that I do not remember!

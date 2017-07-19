@@ -2,12 +2,14 @@
 layout: default-no-aside
 ---
 
-<h4>Warmongers News</h4>
+<h4>Change log</h4>
 {% for post in site.posts %}
-	{% if post.categories contains 'warmonger' %}
+	{% if post.categories contains 'changes' %}
 		<time>{{ post.date | date: "%b %-d, %Y" }}</time>
 		<h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+		<p>{{ post.content }}</p>
+		<hr>
 	{% endif %}
 {% endfor %}
-
-<p>subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+	
+<p>subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>changelog
