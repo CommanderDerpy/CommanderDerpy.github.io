@@ -6,13 +6,18 @@ date:   2017-07-17 00:14:00 -0600
 categories: warmonger
 ---
 
+**Things to do**
+- [ ] Make the Calendar and the Discord Embed variable sizes depending on the size of the containing div.
+- [ ] Do mobile versions and smaller screen resoultions
+
 **Things to add**
 - [ ] [add some way for people to leave comments on posts with](https://staticman.net/docs/index.html).
 - [x] Add a google calendar for events etc.
 - [ ] Find other things to do with the website.
-- [ ] Add the about page (info about the guild)
+- [x] Add the about page
+- [ ] Add info to the about page
 - [ ] Application or how to join page (maybe a form or link to discord?)
-- [ ] A section for bdo information like guids etc.
+- [x] A section for bdo information like guides etc.
 
 **Research**
 - [ ] find a way to let the bot send data to the webpage -- some options below <br>

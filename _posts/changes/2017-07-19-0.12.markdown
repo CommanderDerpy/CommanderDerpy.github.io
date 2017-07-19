@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "0.12"
+date:   2017-07-18 00:14:30 -0600
+categories: changes
+---
+
+- Centered the discord embed
+- The Banner image will now display propely on higher resolutions
+- Discord and Calendar embed width are now dependant on screen size

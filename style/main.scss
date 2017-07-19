@@ -2,6 +2,11 @@
 
 ---
 
+#myCarousel > div > div> img, #myCarousel > div > div > a > img
+{
+	min-width: 100%;
+}
+
 body > nav {
 	margin-bottom: 0 !important;
 }
