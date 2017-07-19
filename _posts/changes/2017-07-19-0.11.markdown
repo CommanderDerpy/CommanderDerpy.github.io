@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "0.11"
+date:   2017-07-18 00:00:00 -0600
+categories: changes
+---
+
+- Added text below the Calendar incase people are not signed into google.
+- Removed the CSS for Calendar.index and replaced it with Boostrap Classes
+- Fixed the Calendar not propely showing events
+- Removed the Discord embed from the change log and Warmonger blog
+- Added Guides page
+- Added a visit counter to the footer

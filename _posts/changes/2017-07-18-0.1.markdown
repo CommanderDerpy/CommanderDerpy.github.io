@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Very First chage log"
+title:  "Initial commit + 0.1"
 date:   2017-07-18 00:00:00 -0600
 categories: changes
 ---

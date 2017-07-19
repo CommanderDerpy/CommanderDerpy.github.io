@@ -17,18 +17,18 @@
       <ul class="nav navbar-nav">
         <li><a href="{{ "/news" | prepend: site.baseurl }}">News</a></li>
         <li><a href="{{ "/calendar" | prepend: site.baseurl }}">Calendar</a></li>
-        <li class="disabled"><a href="{{ "/join" | prepend: site.baseurl }}">Join the Guild</a></li>
-        <li class="disabled"><a href="{{ "/about_us" | prepend: site.baseurl }}">About us</a></li>
-        <li class="dropdown disabled">
+        <li><a href="{{ "/join" | prepend: site.baseurl }}">Join the Guild</a></li>
+        <li><a href="{{ "/about_us" | prepend: site.baseurl }}">About us</a></li>
+        <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Black Desert Online <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Guids</a></li>
-            <li><a href="#">Helpful Links</a></li>
-            <li><a href="#">Something else here</a></li>
+            <li><a href="{{ "/guides" | prepend: site.baseurl }}">Guides</a></li>
+            <li class="disabled"><a href="#">Something else here</a></li>
+            <li class="disabled"><a href="#">Something else here</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
+            <li class="disabled"><a href="#">Separated link</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
+            <li class="disabled"><a href="#">One more separated link</a></li>
           </ul>
         </li>
       </ul>
