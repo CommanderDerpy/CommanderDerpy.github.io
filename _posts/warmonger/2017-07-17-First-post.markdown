@@ -55,3 +55,7 @@ Use this [link](https://discord.gg/AXtuyzK) to join us in discord!
   <button type="submit">Go!</button>
 </form>
 
+{% assign comments = site.data.comments[page.slug] | sort %}
+{% for comment in comments %}
+  show a comment
+{% endfor %}
