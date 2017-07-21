@@ -6,3 +6,29 @@ layout: default-no-aside
 <time>{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</time>
 
 {{ content }}
+
+<hr>
+
+<form method="POST" action="https://api.staticman.net/v2/entry/CommanderDerpy/CommanderDerpy.github.io/master/comments">
+  <input name="options[redirect]" type="hidden" value="https://my-site.com">
+  <!-- e.g. "2016-01-02-this-is-a-post" -->
+  <!-- Page and title will create a folder with the article and then put the comment in there -->
+  <!-- <input name="options[title]" type="hidden" value="{{ page.title }}"> -->
+  <input name="options[slug]" type="hidden" value="{{ page.slug }}">
+  <!-- This wont! -->
+  <!-- <input name="options[title]" type="hidden" value="{{ post.title }}"> -->
+  <label><input name="fields[name]" type="text">Name</label>
+  <!-- <label><input name="fields[email]" type="email">E-mail</label> -->
+  <label><textarea name="fields[message]"></textarea>Message</label>
+  
+  <button type="submit">Go!</button>
+</form>
+{% if site.data.comments[page.slug] != null %}
+	{% assign comments = site.data.comments[page.slug] | sort %}
+	{% for comment in comments %}
+	  {% assign name = comment[1].name %}
+	  {% assign date = comment[1].date %}
+	  {% assign message = comment[1].message %}
+	  {% include comment.html index=forloop.index name=name date=date message=message %}
+	{% endfor %}
+{% endif %}

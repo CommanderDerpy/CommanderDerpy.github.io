@@ -1,0 +1,9 @@
+---
+layout: post_changes
+title:  "0.2"
+date:   2017-07-18 00:14:30 -0600
+categories: changes
+---
+
+- Added comments to the first post
+- change log has its own post layout
